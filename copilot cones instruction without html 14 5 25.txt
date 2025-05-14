@@ -1,0 +1,182 @@
+3d text
+serif and sans serif fonts
+3d cones
+Plastic texture
+texture colour solid and rainbow
+colour picker
+Rainbow shades and hues which change and expand as the number of cones and other shapes increases.
+lighting to make 3d cones and text look the most plastic. glossy and shiny.
+
+Number of cones, cubes,cyclinders
+
+a space between objects called Increments such that when increments increase in value the objects move apart 
+for example there are 3 cones if the increment is 2units then all cones are 2 units apart but when a cone is 30 units in diameter the increment need to then make all cone spread out evenly so that no cones overlap.
+
+There is an increments function menu for height, radius 
+length and width.
+
+
+height,length,width controls for unit by number increments
+orientation control by mouse and shift key
+
+rotation of objects in the x y an z axis
+
+Number of Cones
+
+Base Radius
+
+Radius Increment
+
+Cone Height
+
+Height Increment
+
+Spacing
+
+Rotation
+
+Radius Formula (n):
+(n+1)*0.5
+Height Formula (n):
+(n+1)*0.8
+Taper (%):
+
+Object Properties
+ Object Type 
+Text
+ Text Content 
+3D ART
+  Font Style 
+Helvetiker (Sans)
+Height:  
+Size:  
+Curve:  
+Width:   
+Height:  
+Depth:  
+Appearance
+ Material 
+Shiny Plastic
+ Base Color
+
+ 
+ Rainbow Effects
+ Off
+ Color Cycle
+ Gradient
+ Per Letter
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+
+a menu which can be hidden and un hidden
+
+
+Stable cone sizing with linear progression
+
+Enhanced lighting system with shadows
+
+Improved material properties for better visual quality
+
+Isolated color changes for selected cone
+
+Corrected color control functionality
+
+Smoother camera animations
+
+Better grid visibility
+
+Enhanced UI contrast and styling
+
+Proper error handling
+
+Optimized performance
+
+All cones now maintain proportional sizing without sudden jumps
+
+Added ambient and directional lighting for better material rendering
+
+Enhanced visual feedback for selected cone with stronger emissive glow
+
+Fixed color controls to properly update non-selected cones
+
+Improved camera motion smoothness
+
+Increased grid visibility for better spatial reference
+
+Adjusted material properties for more metallic, reflective appearance
+
+These changes result in:
+
+Stable cone sizes with smooth progression
+
+Enhanced visual hierarchy and depth
+
+Clearer selection feedback
+
+More intuitive color controls
+
+Overall more polished and professional appearance
+
+Beautiful Icons:
+
+Navigation buttons use Font Awesome
+Control buttons feature relevant icons (refresh, grid, rainbow, file export, undo/redo)
+
+Enhanced Navigation:
+
+Added screenshot button in the floating menu
+
+Added help button with instructions popup
+
+All buttons have tooltips on hover
+
+Complete Functionality:
+
+All shape types implemented (prism, bipyramid, antiprism, trapezohedron)
+
+Export functionality (PNG and GLTF)
+
+Mobile-optimized touch controls
+
+Input validation with error messages
+
+Undo/redo functionality with 20-step history
+
+Visual Improvements:
+
+Consistent icon spacing and sizing
+
+Better button hover states
+
+Responsive design for all screen sizes
+
+Performance:
+
+Proper memory management
+
+Efficient rendering
+
+Smooth animations
+
+
+
+            --primary-color: #6e45e2;
+            --secondary-color: #88d3ce;
+            --dark-color: #1a1a2e;
+            --darker-color: #0f0f1a;
+            --light-color: #f5f5fa;
+            --accent-color: #ff7e5f;
+            --border-radius: 16px;
+            --box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 
