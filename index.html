@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Design Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FontLoader.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="render-container"></div>
+        <button id="toggle-ui"><i class="fas fa-bars"></i></button>
+        <div id="ui-container">
+            <header class="ui-header">
+                <div class="ui-title">
+                    <i class="fas fa-magic"></i>
+                    3D Design Studio
+                </div>
+            </header>
+            <main class="ui-sections">
+                <!-- Object Controls -->
+                <div class="control-group">
+                    <div class="section-title">
+                        <i class="fas fa-shapes"></i>
+                        Object Type
+                    </div>
+                    <select id="object-type">
+                        <option value="cone">Cone</option>
+                        <option value="sphere">Sphere</option>
+                        <option value="cube">Cube</option>
+                        <option value="cylinder">Cylinder</option>
+                    </select>
+                </div>
+
+                <!-- Color Controls -->
+                <div class="control-group">
+                    <div class="section-title">
+                        <i class="fas fa-palette"></i>
+                        Color Mode
+                    </div>
+                    <div class="color-mode-group">
+                        <div class="color-mode-option">
+                            <input type="radio" id="color-solid" name="color-mode" value="solid" checked>
+                            <label for="color-solid">Solid</label>
+                        </div>
+                        <div class="color-mode-option">
+                            <input type="radio" id="color-rainbow" name="color-mode" value="rainbow">
+                            <label for="color-rainbow">Rainbow</label>
+                        </div>
+                    </div>
+                    <input type="color" id="base-color" value="#ff5722">
+                </div>
+
+                <!-- Cone Controls -->
+                <div class="control-group cone-controls">
+                    <div class="section-title">
+                        <i class="fas fa-cone"></i>
+                        Cone Settings
+                    </div>
+                    <label>Number of Cones</label>
+                    <input type="number" id="numCones" value="5" min="1" max="200">
+                    <label>Base Radius</label>
+                    <input type="number" id="baseRadius" value="2" step="0.1" min="0.1">
+                    <label>Height</label>
+                    <input type="number" id="coneHeight" value="5" step="0.1" min="0.1">
+                </div>
+
+                <button id="update-btn">Update Scene</button>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
