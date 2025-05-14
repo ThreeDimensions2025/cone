@@ -9,6 +9,8 @@ lighting to make 3d cones and text look the most plastic. glossy and shiny.
 
 Number of cones, cubes,cyclinders
 
+and all the geometry code required to create all cones and cubes etc
+
 a space between objects called Increments such that when increments increase in value the objects move apart 
 for example there are 3 cones if the increment is 2units then all cones are 2 units apart but when a cone is 30 units in diameter the increment need to then make all cone spread out evenly so that no cones overlap.
 
